@@ -4,7 +4,7 @@ Created by : Jaime Mejia
 */
 
 public class Product {
-    private String productId;
+    private Integer productId;
     private String name;
     private Integer price;
     private Integer quantity;
@@ -24,14 +24,6 @@ public class Product {
 
     }
 
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
     public Integer getPrice() {
         return price;
     }
@@ -48,12 +40,12 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public String getProductId() {
+    public Integer getProductId() {
         return productId;
     }
 
-    public void setProductId(String empId) {
-        this.productId = empId;
+    public void setProductId(Integer productId) {
+        this.productId = productId;
     }
 
     public boolean quantityValidate(int quantity) {

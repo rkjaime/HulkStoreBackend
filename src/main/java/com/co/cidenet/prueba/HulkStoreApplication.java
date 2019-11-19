@@ -1,13 +1,16 @@
 package com.co.cidenet.prueba;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 
+@EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
 @SpringBootApplication
-public class HulkStoreApplication {
+class HulkStoreApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(HulkStoreApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(HulkStoreApplication.class, args);
+    }
 
 }
